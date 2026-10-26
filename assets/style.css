@@ -988,3 +988,10 @@ hr {
     transform: none;
   }
 }
+
+
+/* Single-page navigation enhancements */
+html { scroll-padding-top: 96px; }
+[id] { scroll-margin-top: 96px; }
+.nav a[aria-current="location"] { color: var(--accent); text-decoration: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
